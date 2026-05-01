@@ -210,7 +210,7 @@ EOFSSL
 # Git clone
 show_progress "Cloning ITFlow..."
 {
-    git clone --branch ${branch} https://github.com/dw929/itflow/ /var/www/${domain}
+    git clone --branch ${branch} https://github.com/dw929/itflow /var/www/${domain}
     chown -R www-data:www-data /var/www/${domain}
 } & spin "Cloning ITFlow"
 
